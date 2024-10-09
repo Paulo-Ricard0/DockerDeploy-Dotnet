@@ -1,0 +1,9 @@
+# services:
+#   docker.api:
+#     environment:
+#       - ASPNETCORE_ENVIRONMENT=Development
+
+
+#   migrate:
+#     environment:
+#       - ASPNETCORE_ENVIRONMENT=Development
