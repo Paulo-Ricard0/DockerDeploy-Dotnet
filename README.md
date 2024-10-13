@@ -4,11 +4,11 @@ a
 
 
 
-![Figure 1](/.eraser/afyzke4TOpLA7pEUtlpT___qa0mvucRMbRdy32UUcpXACVof082___---figure---NqvnJPwTzG8FJMpR2zoUC---figure---ljXJAas3GBJ60KCuCvtRrw.png "Figure 1")
+![Figure 1](/.eraser/afyzke4TOpLA7pEUtlpT___qa0mvucRMbRdy32UUcpXACVof082___---figure---63vv6dva1oSwV3NB8sQuR---figure---ljXJAas3GBJ60KCuCvtRrw.png "Figure 1")
 
 
 
-![Figure 2](undefined "Figure 2")
+![Figure 2](/.eraser/afyzke4TOpLA7pEUtlpT___qa0mvucRMbRdy32UUcpXACVof082___---figure---HRcwkquXeimP8RUj9CWdG---figure---zAMrZC_vLyDUUDi3dXN77Q.png "Figure 2")
 
 
 
