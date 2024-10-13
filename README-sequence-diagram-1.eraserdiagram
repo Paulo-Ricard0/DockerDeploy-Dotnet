@@ -1,0 +1,25 @@
+sequence-diagram
+
+// Each row is a msg between columns
+// Client [icon: monitor] > Server: Data request
+// activate Client
+// Server [icon: server] <> Service: Service request
+// loop [label: until success] {
+//     Service [icon: tool] > Service: Check availability
+// }
+// Server - Service: Data processing
+// Server --> Client: Data response
+// deactivate  Client
+
+me [icon: user] > control plane api server [icon: k8s-api]:1. kubectl create -f pod.yml
+control plane api server  --> control plane etcd datastore [icon: k8s-etcd] :2. save new state
+control plane etcd datastore <- control plane controller manager [icon: k8s-c-c-m] :3. check for changes
+control plane controller manager <- control plane scheduler [icon: k8s-sched] :4. watch for unassigned pods(s)
+control plane controller manager -> control plane scheduler:5. notify about pod w nodename=" "
+control plane controller manager <- control plane scheduler:6. assign pod to node
+control plane api server --> control plane etcd datastore:7. save new state
+control plane api server <- node kubelet [icon: k8s-kubelet] :8. look for newly assigned pod(s)
+control plane api server -> node kubelet:9. bind pod to node
+node kubelet -> node container runtime [icon: docker]:10. start container
+control plane api server <- node kubelet:11. update pod status
+control plane api server --> control plane etcd datastore:12. save new state
